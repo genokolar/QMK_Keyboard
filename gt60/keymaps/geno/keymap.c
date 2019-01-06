@@ -123,12 +123,14 @@ uint32_t default_layer_state_set_user(uint32_t state) {
      if(rgblight_config.enable == 1) {
         rgblight_config.mode =1;
         rgblight_sethsv_noeeprom_red();//默认层改变闪红光
-        _delay_ms(200);
-        rgblight_toggle_noeeprom();
+        rgblight_disable_noeeprom();
         _delay_ms(100);
-        rgblight_toggle_noeeprom();
+        rgblight_enable_noeeprom();
         _delay_ms(200);
-        rgblight_toggle_noeeprom();
+        rgblight_disable_noeeprom();
+        _delay_ms(100);
+        rgblight_enable_noeeprom();
+        _delay_ms(200);
         rgblight_init();
      }
   return state;
