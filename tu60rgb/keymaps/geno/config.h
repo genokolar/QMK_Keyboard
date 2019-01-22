@@ -17,3 +17,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 #define RGBLIGHT_EFFECT_CHRISTMAS_STEP 1
+#define BACKLIGHT_BREATHING
+#define RGBLIGHT_HUE_STEP 4
+#define RGBLIGHT_SAT_STEP 8
+#define RGBLIGHT_VAL_STEP 16
+#define RGBLIGHT_SLEEP
